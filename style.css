@@ -1,0 +1,695 @@
+/* ===== GERAL ===== */
+body {
+  margin: 0;
+  font-family: 'Crimson Text', serif;
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+  background-color: #1a1a1a;
+  border-bottom: 2px solid #e60000;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 3em;
+  color: #e60000;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+/* ===== MENU ===== */
+nav {
+  background-color: #111;
+  border-top: 1px solid #e60000;
+  border-bottom: 1px solid #e60000;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #e60000;
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu li {
+  margin: 0 15px;
+}
+
+.menu a {
+  color: #ff3333;
+  text-decoration: none;
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  padding: 10px 0;
+  transition: all 0.3s;
+}
+
+.menu a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #e60000;
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.subtitulo {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.2em;
+  color: #ff4d4d;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.subtitulo span {
+  color: #fff;
+  text-shadow: 0 0 5px #e60000;
+}
+
+.intro h2 {
+  font-family: 'Cinzel', serif;
+  color: #e60000;
+  font-size: 2em;
+  margin-top: 0;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #e60000;
+  margin-top: 40px;
+}
+
+/* ===== ESTILOS COMUNS PARA PÁGINAS ===== */
+.container-padrao {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.titulo-pagina {
+  font-family: 'Cinzel', serif;
+  color: #e60000;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #e60000;
+  padding-bottom: 10px;
+}
+
+/* ===== ESTILOS DA PÁGINA GERAÇÕES ===== */
+.geracao-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.geracao-texto {
+  flex: 1;
+  min-width: 300px;
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.geracao-texto strong {
+  color: #ff3333;
+}
+
+.geracao-imagem {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.geracao-imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== ESTILOS DA PÁGINA NAVEGAR ===== */
+.conteudo-guia {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.imagem-topo {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.guia-item {
+  background-color: rgba(26, 26, 26, 0.7);
+  border-left: 3px solid #e60000;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 0 8px 8px 0;
+}
+
+.guia-item h3 {
+  font-family: 'Cinzel', serif;
+  color: #e60000;
+  margin-top: 0;
+}
+
+/* ===== ESTILOS DA FICHA DE PERSONAGEM ===== */
+.ficha-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.ficha-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.ficha-list {
+  list-style: none;
+  padding: 0;
+}
+
+.ficha-list li {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #333;
+  line-height: 1.6;
+}
+
+.ficha-input {
+  display: inline-block;
+  min-width: 200px;
+  border-bottom: 1px solid #ff3333;
+  padding: 0 5px;
+}
+
+.ficha-note {
+  color: #999;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.ficha-appearance {
+  background-color: rgba(26, 26, 26, 0.7);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.appearance-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.appearance-text, .appearance-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.ficha-textarea {
+  width: 100%;
+  height: 150px;
+  background-color: #111;
+  border: 1px solid #333;
+  color: #e0e0e0;
+  padding: 10px;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.image-upload {
+  margin-top: 10px;
+}
+
+.image-upload input[type="file"] {
+  display: none;
+}
+
+.image-upload label {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #e60000;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.image-upload label:hover {
+  background-color: #ff3333;
+}
+
+.ficha-notes {
+  background-color: rgba(230, 0, 0, 0.1);
+  padding: 15px;
+  border-left: 3px solid #e60000;
+  border-radius: 0 4px 4px 0;
+}
+
+.important-note {
+  color: #ff4d4d;
+}
+
+.admin-note {
+  font-style: italic;
+  color: #999;
+}
+
+/* ===== FICHA SIMPLES ===== */
+.ficha-simples {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.ficha-simples h3 {
+  font-family: 'Cinzel', serif;
+  color: #ff3333;
+  margin-top: 25px;
+  font-size: 1.3em;
+}
+
+.ficha-simples h4 {
+  font-family: 'Cinzel', serif;
+  color: #ff3333;
+  margin-top: 25px;
+}
+
+.ficha-simples ul {
+  padding-left: 20px;
+}
+
+/* ===== ESTILOS DA PÁGINA DRAGÕES ===== */
+.dragoes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.dragao-card {
+  background-color: rgba(26, 26, 26, 0.7);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.dragao-card:hover {
+  transform: translateY(-5px);
+}
+
+.dragao-imagem {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-bottom: 2px solid #e60000;
+  background-color: #1a1a1a;
+}
+
+.dragao-info {
+  padding: 20px;
+}
+
+.dragao-info h3 {
+  font-family: 'Cinzel', serif;
+  color: #ff3333;
+  margin-top: 0;
+  font-size: 1.5em;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+/* ===== ESTILOS DA PÁGINA ROLETA ===== */
+.roleta-intro {
+  background-color: rgba(26, 26, 26, 0.7);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border-left: 3px solid #e60000;
+}
+
+.roleta-section {
+  margin-bottom: 40px;
+}
+
+.roleta-section h2 {
+  font-family: 'Cinzel', serif;
+  color: #ff3333;
+  font-size: 1.8em;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.roleta-section h3 {
+  font-family: 'Cinzel', serif;
+  color: #ff4d4d;
+  font-size: 1.4em;
+  margin: 25px 0 15px 0;
+}
+
+.roleta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.roleta-card {
+  background-color: rgba(30, 30, 30, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #333;
+  transition: all 0.3s;
+}
+
+.roleta-card:hover {
+  border-color: #e60000;
+  box-shadow: 0 0 10px rgba(230, 0, 0, 0.3);
+}
+
+.roleta-imagem {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  margin: 15px 0;
+  border-radius: 4px;
+}
+
+.roleta-nota {
+  background-color: rgba(230, 0, 0, 0.1);
+  padding: 15px;
+  border-left: 3px solid #e60000;
+  border-radius: 0 4px 4px 0;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+/* ===== ESTILOS DA PÁGINA LORDES ===== */
+.lordes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.lorde-card {
+  background-color: rgba(26, 26, 26, 0.7);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.lorde-card:hover {
+  transform: translateY(-5px);
+}
+
+.lorde-imagem {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-bottom: 2px solid #e60000;
+}
+
+.lorde-info {
+  padding: 20px;
+  text-align: center;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2em;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 5px 0;
+  }
+
+  .titulo-pagina {
+    font-size: 2em;
+  }
+
+  .geracao-content, .appearance-options {
+    flex-direction: column;
+  }
+
+  .geracao-texto, .geracao-imagem,
+  .appearance-text, .appearance-image {
+    width: 100%;
+  }
+
+  .dragoes-grid, .lordes-grid, .roleta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dragao-imagem, .lorde-imagem {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  
+  .intro h2 {
+    font-size: 1.5em;
+  }
+  
+  .titulo-pagina {
+    font-size: 1.8em;
+	
+	/* ===== ESTILOS DA PÁGINA HISTÓRIA ===== */
+.historia-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.historia-titulo {
+  font-family: 'Cinzel', serif;
+  color: #e60000;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.historia-section {
+  background-color: rgba(26, 26, 26, 0.7);
+  padding: 30px;
+  border-radius: 8px;
+  border-left: 3px solid #e60000;
+}
+
+.historia-imagem {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.destaque-imagem {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  box-shadow: 0 0 20px rgba(230, 0, 0, 0.5);
+}
+
+.historia-texto {
+  font-size: 1.1em;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.historia-texto p {
+  margin-bottom: 20px;
+}
+
+.destaque-final {
+  font-family: 'Cinzel', serif;
+  font-size: 1.3em;
+  text-align: center;
+  color: #ff3333;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: rgba(230, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .historia-titulo {
+    font-size: 2em;
+  }
+  
+  .historia-section {
+    padding: 20px;
+  }
+  
+  .historia-texto {
+    font-size: 1em;
+  }
+  
+  .destaque-final {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .historia-titulo {
+    font-size: 1.8em;
+  }
+  
+  .destaque-imagem {
+    max-width: 100%;
+  }
+}
+
+/* ===== ESTILOS DA PÁGINA LORDES - ATUALIZADO ===== */
+.lordes-container {
+  max-width: 1400px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.lordes-titulo {
+  font-family: 'Cinzel', serif;
+  color: #e60000;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #e60000;
+  padding-bottom: 10px;
+}
+
+.lordes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.lorde-card {
+  background-color: rgba(26, 26, 26, 0.7);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.lorde-card:hover {
+  transform: translateY(-5px);
+}
+
+.lorde-imagem-container {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* Proporção 1:1 (quadrado) */
+  overflow: hidden;
+}
+
+.lorde-imagem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  border-bottom: 2px solid #e60000;
+}
+
+.lorde-info {
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lorde-info h3 {
+  font-family: 'Cinzel', serif;
+  color: #ff3333;
+  margin: 0 0 10px 0;
+  font-size: 1.3em;
+  line-height: 1.3;
+}
+
+.lorde-info p {
+  font-family: 'Crimson Text', serif;
+  color: #e0e0e0;
+  margin: 0;
+  font-style: italic;
+  font-size: 0.9em;
+}
+  }
+}

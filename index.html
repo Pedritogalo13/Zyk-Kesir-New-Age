@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zyk Kesir - RPG de Game of Thrones</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Crimson+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Cabeçalho apenas com a logo e título -->
+  <header>
+    <div class="header-content">
+      <img src="logo.jpg" alt="Logo Zyk Kesir" class="logo">
+      <h1>ZYK KESIR</h1>
+    </div>
+  </header>
+
+  <!-- Menu simplificado -->
+  <nav>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <ul class="menu">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="ficha.html">Ficha</a></li>
+      <li><a href="personagens-historicos.html">Personagens Historicos</a></li>
+      <li><a href="historia.html">História</a></li>
+      <li><a href="geracoes.html">Gerações</a></li>
+      <li><a href="dragoes.html">Dragões</a></li>
+      <li><a href="sistema.html">Sistema</a></li>
+      <li><a href="explicacao-roleta.html">Explicação da Roleta</a></li>
+      <li><a href="lordes.html">Lordes</a></li>
+	  <li><a href="Navegar.html">Como Navegar no Site</a></li>
+    </ul>
+  </nav>
+
+  <!-- Conteúdo principal com o subtítulo movido para cá -->
+  <main>
+    <section class="intro">
+      <p class="subtitulo">UM RPG INSPIRADO EM <span>GAME OF THRONES</span></p>
+      <h2>Bem-vindo ao mundo de Zyk Kesir</h2>
+      <p>Conflitos de casas, fogo de dragões, intrigas políticas e o destino de um reino em suas mãos.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Zyk Kesir RPG | Inspirado em George R. R. Martin</p>
+  </footer>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.menu').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

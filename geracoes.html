@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerações - Zyk Kesir</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Crimson+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Cabeçalho Padrão -->
+  <header>
+    <div class="header-content">
+      <img src="logo.jpg" alt="Logo Zyk Kesir" class="logo">
+      <h1>ZYK KESIR</h1>
+    </div>
+  </header>
+
+  <!-- Menu Padrão -->
+  <nav>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <ul class="menu">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="ficha.html">Ficha</a></li>
+      <li><a href="personagens-historicos.html">Personagens Historicos</a></li>
+      <li><a href="historia.html">História</a></li>
+      <li><a href="geracoes.html" class="active">Gerações</a></li>
+      <li><a href="dragoes.html">Dragões</a></li>
+      <li><a href="sistema.html">Sistema</a></li>
+      <li><a href="explicacao-roleta.html">Explicação da Roleta</a></li>
+      <li><a href="navegar.html">Como Navegar no Site</a></li>
+      <li><a href="lordes.html">Lordes</a></li>
+    </ul>
+  </nav>
+
+  <!-- Conteúdo Principal -->
+  <main class="geracoes-container">
+    <section class="geracao-section">
+      <h2>Geração 1 – O Legado de Fogo e Sangue</h2>
+      
+      <div class="geracao-content">
+        <div class="geracao-texto">
+          <p>
+            Após a morte de Aegon, o Conquistador, Aegon II é coroado rei e parte para conquistar Dorne.<br>
+            Seu irmão, Rhaegar, lidera a campanha, mas é capturado. Após negociações, Dorne se rende e os Sete Reinos se unem.<br>
+            Internamente, os casamentos de Aegon geram conflitos e tragédias.<br>
+            Com a paz abalada, Rhaegar alia-se ao lorde exilado Petriatus para iniciar uma nova guerra em Mantarys,<br>
+            reacendendo a promessa Targaryen: <strong>Fogo e Sangue</strong>.
+          </p>
+        </div>
+        
+        <div class="geracao-imagem">
+          <img src="geracoes.jpg" alt="Imagem representando a geração">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé Padrão -->
+  <footer>
+    <p>&copy; 2025 Zyk Kesir RPG | Inspirado em George R. R. Martin</p>
+  </footer>
+
+  <!-- Script do Menu Mobile -->
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.menu').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

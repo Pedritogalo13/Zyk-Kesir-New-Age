@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Como Navegar no Site – Zyk Kesir</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Crimson+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Cabeçalho Padrão -->
+  <header>
+    <div class="header-content">
+      <img src="logo.jpg" alt="Logo Zyk Kesir" class="logo">
+      <h1>ZYK KESIR</h1>
+    </div>
+  </header>
+
+  <!-- Menu Padrão -->
+  <nav>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <ul class="menu">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="ficha.html">Ficha</a></li>
+      <li><a href="personagens-historicos.html">Personagens Historicos</a></li>
+      <li><a href="historia.html">História</a></li>
+      <li><a href="geracoes.html">Gerações</a></li>
+      <li><a href="dragoes.html">Dragões</a></li>
+      <li><a href="sistema.html">Sistema</a></li>
+      <li><a href="explicacao-roleta.html">Roleta</a></li>
+      <li><a href="navegar.html" class="active">Navegação</a></li>
+      <li><a href="lordes.html">Lordes</a></li>
+    </ul>
+  </nav>
+
+  <!-- Conteúdo Principal -->
+  <main class="conteudo-guia">
+    <img src="imagemcomo.jpg" alt="Imagem decorativa" class="imagem-topo">
+    
+    <section class="intro">
+      <h2>Guia para os Viajantes de Westeros</h2>
+      <p>Seja bem-vindo(a) ao mundo de <strong>Zyk Kesir</strong>. Para que você possa mergulhar de forma fluida e clara na experiência de roleplay, segue abaixo um guia explicativo sobre o propósito de cada aba do nosso site:</p>
+    </section>
+
+    <section class="guia-item">
+      <h3>📜 Gerações</h3>
+      <p>Aqui você encontrará resumos médios das gerações anteriores, seus eventos marcantes, reinos que se ergueram e caíram, traições, heróis e conflitos. É essencial para compreender o passado do universo onde sua história atual acontece.</p>
+    </section>
+
+    <section class="guia-item">
+      <h3>⚔️ Sistema</h3>
+      <p>Explicações detalhadas das regras, mecânicas, dados utilizados e formas de rolagem. Tudo que rege o RPG — do uso de magias à progressão de personagem — está nesta aba.</p>
+    </section>
+
+    <section class="guia-item">
+      <h3>🧾 Ficha</h3>
+      <p>O local onde você encontrará a ficha de personagem para preencher e enviar. Ela define quem é seu personagem, suas origens, aparência, poderes e conexões familiares.</p>
+    </section>
+
+    <section class="guia-item">
+      <h3>🏛️ Personagens Históricos</h3>
+      <p>Grandes nomes que moldaram o mundo de Zyk Kesir. Guerreiros lendários, rainhas astutas, traidores famosos e heróis esquecidos — todos eternizados aqui.</p>
+    </section>
+
+    <section class="guia-item">
+      <h3>🐉 Dragões</h3>
+      <p>Conheça cada dragão: nome, idade, feitos em batalha, região atual e seus montadores. Essencial para quem deseja dominar essas criaturas ou simplesmente admirá-las.</p>
+    </section>
+
+    <section class="guia-item">
+      <h3>🎲 Roleta</h3>
+      <p>Explicação da roleta de sorte: como funciona, quando usar, efeitos possíveis, e como ela influencia nos combates e eventos aleatórios do RPG.</p>
+    </section>
+  </main>
+
+  <!-- Rodapé Padrão -->
+  <footer>
+    <p>&copy; 2025 Zyk Kesir RPG | Inspirado em George R. R. Martin</p>
+  </footer>
+
+  <!-- Script do Menu Mobile -->
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.menu').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

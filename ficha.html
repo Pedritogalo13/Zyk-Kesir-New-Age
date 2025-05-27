@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha de Personagem - Zyk Kesir</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Crimson+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Cabeçalho Padrão -->
+  <header>
+    <div class="header-content">
+      <img src="logo.jpg" alt="Logo Zyk Kesir" class="logo">
+      <h1>ZYK KESIR</h1>
+    </div>
+  </header>
+
+  <!-- Menu Padrão -->
+  <nav>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <ul class="menu">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="ficha.html" class="active">Ficha</a></li>
+      <li><a href="personagens-historicos.html">Personagens Historicos</a></li>
+      <li><a href="historia.html">História</a></li>
+      <li><a href="geracoes.html">Gerações</a></li>
+      <li><a href="dragoes.html">Dragões</a></li>
+      <li><a href="sistema.html">Sistema</a></li>
+      <li><a href="explicacao-roleta.html">Explicação da Roleta</a></li>
+      <li><a href="navegar.html">Como Navegar no Site</a></li>
+      <li><a href="lordes.html">Lordes</a></li>
+    </ul>
+  </nav>
+
+  <!-- Conteúdo Principal -->
+  <main class="ficha-simples">
+    <h2>•Ficha de Personagem•</h2>
+
+    <h3>Dados do Personagem:</h3>
+    <ul>
+      <li>Nome:</li>
+      <li>Idade:</li>
+      <li>Altura:</li>
+      <li>Gênero:</li>
+      <li>Personalidade:</li>
+      <li>Sexualidade:</li>
+      <li>Status Relacional:</li>
+    </ul>
+
+    <h3>Dados Gerais:</h3>
+    <ul>
+      <li>Casa: (Escolha uma casa/sobrenome do universo de Game Of Thrones):</li>
+      <li>Armas: (Liste as armas que seu personagem possui):</li>
+      <li>Animais: (Liste os animais que seu personagem possui, se houver):</li>
+      <li>História: (Escreva um resumo da história do seu personagem):</li>
+    </ul>
+
+    <h3>Dados de Magia:</h3>
+    <p>Afinidade Mágica:</p>
+    <p>(Escolha uma das magias encontradas em Sistema):</p>
+
+    <h3>Dados Relacionais:</h3>
+    <ul>
+      <li>Pais: (Liste os nomes dos pais do seu personagem, se vivos ou não):</li>
+      <li>Namorado(a): (Nome do personagem, se for o caso):</li>
+      <li>Parentes: (Liste outros familiares importantes):</li>
+    </ul>
+
+    <h3>Aparência:</h3>
+    <ul>
+      <li>Descrição: (Faça uma descrição detalhada da aparência do seu personagem, incluindo cor do cabelo, olhos, altura, físico, etc.):</li>
+      <li>Ou</li>
+      <li>Imagem: (Anexe uma imagem que represente a aparência do seu personagem):</li>
+    </ul>
+
+    <h4>OBSERVAÇÕES:</h4>
+    <p>IMPORTANTE: Aparência é obrigatória e deve ser feita humanizada por uma I.A ou imagem RealLife</p>
+  </main>
+
+  <!-- Rodapé Padrão -->
+  <footer>
+    <p>&copy; 2025 Zyk Kesir RPG | Inspirado em George R. R. Martin</p>
+  </footer>
+
+  <!-- Script do Menu Mobile -->
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.menu').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

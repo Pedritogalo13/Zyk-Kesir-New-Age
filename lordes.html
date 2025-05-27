@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lordes Soberanos - Zyk Kesir</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Crimson+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Cabeçalho Padrão -->
+  <header>
+    <div class="header-content">
+      <img src="logo.jpg" alt="Logo Zyk Kesir" class="logo">
+      <h1>ZYK KESIR</h1>
+    </div>
+  </header>
+
+  <!-- Menu Padrão -->
+  <nav>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <ul class="menu">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="ficha.html">Ficha</a></li>
+      <li><a href="personagens-historicos.html">Personagens Historicos</a></li>
+      <li><a href="historia.html">História</a></li>
+      <li><a href="geracoes.html">Gerações</a></li>
+      <li><a href="dragoes.html">Dragões</a></li>
+      <li><a href="sistema.html">Sistema</a></li>
+      <li><a href="explicacao-roleta.html">Explicação da Roleta</a></li>
+      <li><a href="navegar.html">Como Navegar no Site</a></li>
+      <li><a href="lordes.html" class="active">Lordes</a></li>
+    </ul>
+  </nav>
+
+  <!-- Conteúdo Principal -->
+  <main class="lordes-container">
+    <h2 class="lordes-titulo">Lordes Soberanos</h2>
+    
+    <div class="lordes-grid">
+      <!-- Rei Aegon Targaryen -->
+      <div class="lorde-card">
+        <img src="aegonii.jpg" alt="Aegon Targaryen" class="lorde-imagem">
+        <div class="lorde-info">
+          <h3>Rei: Aegon Targaryen</h3>
+          <p>Soberano dos Sete Reinos</p>
+        </div>
+      </div>
+	  
+	
+
+      <!-- Príncipe Vaelyx -->
+      <div class="lorde-card">
+        <img src="vhaellor.jpg" alt="Vaelyx Targaryen" class="lorde-imagem">
+        <div class="lorde-info">
+          <h3>Príncipe de Pedra do Dragão: Vaelyx</h3>
+          <p>Lorde Soberano de Pedra do Dragão e Herdeiro do Trono</p>
+        </div>
+      </div>
+
+      <!-- Theron Stark -->
+      <div class="lorde-card">
+        <img src="theronii.jpg" alt="Theron Stark" class="lorde-imagem">
+        <div class="lorde-info">
+          <h3>Senhor do Norte e Lorde de Winterfell: Theron Stark</h3>
+          <p>Guardião do Norte</p>
+        </div>
+      </div>
+
+      <!-- Robert Karstark -->
+      <div class="lorde-card">
+        <img src="robert.jpg" alt="Robert Karstark" class="lorde-imagem">
+        <div class="lorde-info">
+          <h3>Lorde de Karhold: Robert Karstark</h3>
+          <p>Vassalo dos Stark</p>
+        </div>
+      </div>
+
+      <!-- Edric Baratheon -->
+      <div class="lorde-card">
+        <img src="edric.jpg" alt="Edric Baratheon" class="lorde-imagem">
+        <div class="lorde-info">
+          <h3>Senhor da Tempestade e Lorde Baratheon: Edric Baratheon</h3>
+          <p>Guardião do Leste</p>
+        </div>
+      </div>
+
+      <!-- Orion Velaryon -->
+      <div class="lorde-card">
+        <img src="macaco.jpg" alt="Orion Velaryon" class="lorde-imagem">
+        <div class="lorde-info">
+          <h3>Senhor das Marés e Lorde de Driftmark: Orion Velaryon</h3>
+          <p>Mestre dos Navios Reais</p>
+        </div>
+      </div>
+
+      <!-- Margaery Redwyne -->
+      <div class="lorde-card">
+        <img src="margaery.jpg" alt="Margaery Redwyne" class="lorde-imagem">
+        <div class="lorde-info">
+          <h3>Senhora de Arbor: Margaery Redwyne</h3>
+          <p>Senhora das Vinhas</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé Padrão -->
+  <footer>
+    <p>&copy; 2025 Zyk Kesir RPG | Inspirado em George R. R. Martin</p>
+  </footer>
+
+  <!-- Script do Menu Mobile -->
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.menu').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
